@@ -21,6 +21,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ${{ env.REMOTE_DIR }}
+            git config --global --add safe.directory /home/ubuntu/2025action
             git pull
             npm ci
             npm run build
