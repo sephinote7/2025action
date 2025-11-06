@@ -21,4 +21,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ${{ env.REMOTE_DIR }}
-            pwd
+            git pull
+            npm ci
+            npm run build
