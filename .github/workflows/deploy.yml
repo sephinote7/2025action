@@ -17,3 +17,8 @@ jobs:
         run: |
           echo "good"
           echo "morning"
+
+      - name: GitHub 변수
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
