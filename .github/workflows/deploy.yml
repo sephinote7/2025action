@@ -22,3 +22,7 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+
+      - name: GITHUB Action Secret
+        run: |
+          echo ${{secrets.MY_NAME}}
